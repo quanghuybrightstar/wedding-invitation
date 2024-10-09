@@ -126,7 +126,7 @@ h1, h2, h3, h4, h5, h6, figure {
   display: inline;
 }
 .fh5co-nav ul li a {
-  font-size: 16px;
+  font-size: 14px;
   font-family: Be Vietnam Pro ;
   padding: 30px 10px;
   text-transform: uppercase;
@@ -1809,6 +1809,16 @@ form label {
   background-image: url('/images/bg.jpg');
   background-position: center center !important;
 }
+.header_container h1, h2 {
+  filter: drop-shadow(0 1px 2px rgb(0 0 0 / 0.1)) drop-shadow(0 1px 1px rgb(0 0 0 / 0.06));
+}
+
+.event-calendar {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
 @media screen and (max-width: 768px) {
   .fh5co-nav-toggle {
     display: block;
@@ -1819,11 +1829,31 @@ form label {
   .header_container {
     background-image: url('/images/image_1.jpg');
   }
+
+  .btn-detail {
+    font-size: 14px !important;
+    padding: 16px 18px !important;
+  }
+  #fh5co-header .display-tc h2,
+  #fh5co-counter .display-tc h2,
+  .fh5co-cover .display-tc h2 {
+    margin-top: 16px;
+  }
+  .break-header-gratitude {
+    display: none !important;
+  }
+  .event-calendar {
+    flex-direction: column;
+  }
+  .event-calendar .break-date {
+    display: none !important;
+  }
+  .calendar-lunar {
+    display: none !important;
+  }
 }
 
-@media screen and (max-width: 1240px) {
-  .map-container {
-    width: 100% !important;
-    height: 450px !important;
-  } 
-}
+.map-container {
+  width: 100% !important;
+  height: 450px !important;
+} 
